@@ -2,7 +2,7 @@
 
 A Pinging Software to do very fast parallel pinging in bulk and visualize in Web-Browser. It can also be used in SCADA/HMI for integrating tags for getting realtime device status.
 
-
+The tool has been developed in GO and HTML
 
 The tool has been developed to help all the people dealing with Networking devices and its Monitoring
 
