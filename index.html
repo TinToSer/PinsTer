@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="refresh" content="4">
+</script>
+<style>
+table {
+    border-top: double;
+    border-bottom: double;
+    border-right: double;
+	border-left: double;
+}
+th {
+   
+    border-bottom: double;
+    
+}
+th, td {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<h2 style="color:blue">{{.Title}}</h2>
+
+<table >
+    <col width="40%">
+    <col width="30%">
+	<col width="10%">
+    <thead>
+        <tr>
+		    <th bgcolor="khaki">Device Name</th>
+            <th bgcolor="lightblue">IP Address</th>
+            <th bgcolor="yellow">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+		{{ range $key, $value := .Iplst }}
+		 <tr>
+		    <td bgcolor="lightgreen"><b>{{index $value 0}}</b></td>
+            <td bgcolor="grey"><b>{{ $key }}</b></td>
+            <td bgcolor= {{if eq (index $value 1) "Up"}}"green"{{else}}"red"{{end}}><b>{{ index $value 1}}</b></td>
+        </tr>
+		{{ end }}
+    </tbody>
+</table>
+
+</body>
+</html>
