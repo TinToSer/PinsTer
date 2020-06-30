@@ -1,6 +1,6 @@
 # PinsTer
 
-A Pinging Software to do very fast parallel pinging in bulk and visualize in Wen-Browser. It can also be used in SCADA/HMI for integrating tags for getting realtime device live status.
+A Pinging Software to do very fast parallel pinging in bulk and visualize in Web-Browser. It can also be used in SCADA/HMI for integrating tags for getting realtime device live status.
 
 
 
